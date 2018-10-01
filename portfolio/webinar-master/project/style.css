@@ -1,0 +1,236 @@
+/* пишем стили */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	width: auto;
+	height: 100%;
+	background-color: #fff;
+}
+
+h1, h2, .copy {
+	font-family: "RedRingLight", sans-serif;
+	font-weight: 100;
+	font-style: normal;
+}
+button {
+	font-family: "ProximaNovaLight", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+input, textarea, button {
+	outline: none;
+}
+.text_white {
+	color: white;
+}
+.clear {
+	clear: both;
+}
+/* end reset */
+
+/*  пишем код тут */
+/* start header*/
+header {
+	position: relative;
+	width: 100%;
+	height: 100px;
+	
+	padding-top: 15px;
+	z-index: 1;
+	
+	
+}
+header .logo {
+	text-align: center;
+	
+	
+	
+}
+/* end header*/
+/*start banner*/
+.banner {
+	position: relative;
+	width: 100%;
+	height: 650px;
+	background-image: linear-gradient(0deg, #ffa8a8, #fcff00);
+padding-top: 185px;
+	z-index: 0;
+	
+
+}
+.banner .banner-text {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+	
+}
+.banner .banner-text h1 {
+	font-size: 40px;
+	text-transform: uppercase;
+
+}
+
+.banner .banner-text h1 span {
+	font-family: "RedRegularBlack", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+.banner .banner-img {
+position: absolute;
+width: 324px;
+height: 100%;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+background: url("images/phones.png");
+background-repeat: no-repeat;
+background-position: center bottom;
+background-size: auto;
+
+
+}
+/*end banner*/
+/*start about*/
+.about {
+	width: 100%;
+	height: auto;
+	padding: 105px 0;
+	
+}
+.about .about-item {
+	display: inline-block;
+	float: left;
+	width: 33.3%;
+	padding: 0 30px;
+	text-align: center;
+	
+}
+
+.about .about-item h3 {
+	font-family: "ProximaNovaThin", sans-serif;
+	font-size: 24px;
+	font-weight: 300;
+	font-style: normal;
+	text-transform: uppercase;
+
+}
+
+.about .about-item .icon {
+	display: inline-block;
+	width: 64px;
+	height: 64px;
+	margin: 25px 0;
+}
+.about .about-item .icon.innovative {
+	background-image: url("images/lamp.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto;
+	
+
+}
+.about .about-item .icon.unlimited {
+	background-image: url("images/infinity.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto;
+
+}
+.about .about-item .icon.trendy {
+	background-image: url("images/trendy.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto;
+}
+.about .about-item p {
+	width: 75%;
+	font-family: "ProximalNovaLight", sans-serif;
+	font-size: 18px;
+	margin: 0 auto;
+	text-align: justify;
+
+}
+/*end about*/
+/*start form*/
+.form {
+	padding: 105px 0;
+	position: relative;
+	text-align: center;
+	background-color: #f8f8f8;
+}
+.form h2 {
+	font-size: 24px;
+	margin-bottom: 50px;
+}
+.form form {
+	display: inline-block;
+	width: 60%;
+
+}
+.form form input,
+.form form textarea {
+	padding-top: 10px;
+	width: 100%;
+	font-style: 18px;
+	color: #000;
+	border: 2px solid #ffa8a8;
+	border-radius: 15px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.form form input {
+	height: 42px;
+}
+.form form textarea {
+	height: 200px;
+	resize: none;
+	
+}
+.btn {
+	display: inline-block;
+	height: 42px;
+	font-style: 14px;
+	background-color: #fff;
+	padding: 10px 10%;
+	border: none;
+	text-transform: uppercase;
+	background-image: linear-gradient(to right,  #ffa8a8, #fcff00);
+	background-size: 200% auto;
+	transition: all 0.5s;
+	cursor: pointer;
+	border-radius: 15px;
+}
+.btn:hover {
+	background-position: right center;
+}
+/* end form*/
+/*start footer*/
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	text-transform: uppercase;
+	background-color: #ffa8a8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

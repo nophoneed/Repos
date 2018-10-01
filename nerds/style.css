@@ -1,0 +1,496 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 1200px;
+    max-width: 1440px;
+    font-family: "Roboto", Arial, sans-serif;
+    font-style: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+    
+
+}
+a {
+    text-decoration: none;
+
+}
+
+
+
+  .main-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    
+    
+  }
+  .main-navigation-wrapper {
+    width: 100%;
+    
+    
+  }
+  .main-header-logo {
+      margin-right: 200px;
+      padding: 16px 0;
+  }
+  .main-header-logo:hover {
+      opacity: 0.8;
+      cursor: pointer;
+  }
+  .site-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 620px;
+    margin: 0;
+    padding: 0;
+    min-height: 70px;
+    
+  }
+  .site-navigation,
+.user-navigation {
+  list-style: none;
+}
+.site-navigation a:hover,
+.user-navigation a:hover {
+    color: #fb565a;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+}
+.main-navigation-wrapper {
+    display: flex;
+}
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+  display: block;
+  padding: 25px 20px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.cart {
+    position: relative;
+  padding-left: 50px;
+}
+
+.cart::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+   
+    position: absolute;
+    top: 27px;
+    left: -10px;
+    background-image: url("img/cart-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  
+    opacity: 0.3;
+  }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0,0,0,0);
+}
+.main-header {
+    background-color: #eeeeee;
+
+}
+.slider {
+    position: relative;
+    background-color: #eeeeee;
+}
+.slider-controls {
+    position: relative;
+    left: 50%;
+    bottom: 104px;
+    z-index: 100;
+    width: 160px;
+    height: 18px;
+    text-align: center;
+    font-size: 0;
+    transform: translateX(-50%);
+}
+.slider-controls i {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    padding: 8px;
+    
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slider-controls i::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+    width: 18px;
+    height: 18px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+.slider-controls .active::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 3;
+    width: 4px;
+    height: 4px;
+    margin: -4px;
+    background-color: inherit;
+    border: 2px solid #c1c1c1;
+    border-radius: 50%;
+
+}
+.slider-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slider-item {
+    display: none;
+    padding: 78px 0 80px 0;
+    
+}
+.slider-item:nth-child(1) {
+    display: block;
+}
+.slider-item:nth-child(1) {
+    background-image: url(img/slide1.png);
+    background-repeat: no-repeat;
+    background-position: 93% 18px;
+}
+.slider-item:nth-child(2) {
+    
+    background-image: url(img/slide2.png);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+.slider-item:nth-child(3) {
+    
+    background-image: url(img/slide3.png);
+    background-repeat: no-repeat;
+    background-position: 100% 20px;
+}
+
+.slider-item h3 {
+    min-width: 600px;
+    margin: 0;
+    margin-bottom: 27px;
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+
+}
+.slider-item p {
+    min-width: 430px;
+    margin: 0;
+    margin-bottom: 38px;
+}
+.button {
+    display: block;
+    width: 240px;
+    padding: 13px 0;
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    background-color: #fb565a;
+    border-radius: 3px;
+    border: none;
+    
+}
+.button:hover,
+.button:focus {
+    background-color: #e74246;
+}
+.button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #d7373b;
+    box-shadow: 0 3px rgba(0,0,0,0.1) inset;
+
+}
+.products {
+    
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.product {
+    
+    margin-right: 60px;
+    
+}
+.product .button {
+    width: 160px;
+    
+}
+.applications .button {
+    background: #00ca74;
+}
+.applications .button:hover {
+    background: #00ca74;
+}
+.applications .button:active {
+    background: #00aa62;
+} 
+.presentations .button {
+    background: #efc84a;
+}
+.presentations .button:active {
+    background: #e5a722;
+}
+.products h3 {
+    text-transform: uppercase;
+}
+.products p {
+    font-size: 16px;
+}
+.products::after {
+ position: absolute;
+    
+    background-image: url(img/divide.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.about-uss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+h4 {
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 45px;
+    line-height: 45px;
+    
+}
+.about-us.text {
+    flex-grow: 1;
+    padding-right: 140px;
+}
+
+.about-us.logo {
+    
+    margin: 0;
+    padding: 0;
+}
+.indicators {
+    display: flex;
+    
+}
+.indicators div {
+    padding-right: 20px;    
+     
+}
+.products, .about-uss {
+    border-bottom: 1px solid #eeeeee;
+    padding: 80px 0;
+}
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 46px;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 85px;
+   
+
+}
+.contacts img {
+    opacity: 0.2;
+    cursor: pointer;
+}
+.contacts img:hover {
+    opacity: 1;
+}
+.contacts img:active {
+    opacity: 0.1;
+}
+.map {
+    display: block;
+    background: url(img/map.png) no-repeat center;
+   
+    padding-top: 50px;
+    padding-bottom: 54px;
+    
+    width: 100%;
+    
+    
+}
+.contact-us {
+    display:block;
+    position: relative;
+    width: 320px;
+    left: 141px;
+    background-color: #ffffff;
+    
+    z-index: 1;
+    
+}
+.content {
+    padding: 48px;
+    
+}
+.content .button {
+    width: 100%;
+}
+.map img {
+    position: absolute;
+    left: 700px;
+      
+}
+
+
+.footer-social {
+    display: inline-block;
+    width: 260px;
+    text-align: center;
+    margin-right: 141px;
+}
+.footer-social ul {
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 79px;
+    height: 79px;
+    background-color:#e1e1e1;
+    border-radius: 50%;
+}
+.main-footer {
+    height: 218px;
+    
+
+}
+.main-footer .container {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    
+    
+}
+.social-button:hover{
+    background-color: #e74246;
+}
+.social-button:active{
+    background-color: #d7373b;
+}
+.social-button:active path {
+    fill: #e37376;
+}
+.modal-contact-us {
+    display: block;
+    
+    position: fixed;
+    color: #000;
+    background-color: #fff;
+    bottom: 180px;
+    left: center;
+    margin-left: 240px; 
+    width: 760px;
+    
+    
+    padding: 25px 104px 87px 90px;
+    z-index: 3;
+    display: none;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.text-e {
+    width: 100%;
+    
+}
+.text-e textarea {
+    resize: none;
+   height: 120px;
+   border-radius: 3px;
+   width: 97%;
+   padding: 10px;
+}
+.contact-form input {
+    width: 324px;
+    height: 50px;
+    border-radius: 1%;
+    padding-left: 10px;
+    
+   
+    
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 9px;
+    margin-left: 15px;
+}
+.modal-contact-us {
+    box-shadow: 5px 10px 30px 10px rgba(0,0,0,0.75);
+}
+.contact-form label {
+    font-weight: bold;
+    margin: 0 0 12px 0;
+}
+.modal-close {
+    width: 22px;
+    height: 22px;
+    font-size: 0;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    top: 90px;
+    right: 101px;
+    position: absolute;
+    padding: 0;
+    
+  }
+  .modal-close::before,
+  .modal-close::after {
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 3px;
+    background-color: #fb565a;
+    opacity: 0.3;
+  }
+  .modal-close::before {
+    transform: rotate(45deg);
+  }
+  .modal-close::after{
+    transform: rotate(-45deg);
+  }
